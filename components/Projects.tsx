@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
+
 export function Projects() {
   return (
     <div className="mt-[7.1%]" id="projects">
@@ -59,7 +60,7 @@ const SkeletonOne = () => {
       },
     },
   };
-
+ 
   return (
     <motion.div
       initial="initial"
