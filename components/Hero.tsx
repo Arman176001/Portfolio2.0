@@ -3,7 +3,14 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Magicbutton from "./ui/Magicbutton";
 import { FaLocationArrow } from "react-icons/fa";
 import { FloatingDock } from "./ui/floating-dock";
-import { IconBrandGithub, IconBrandX,IconHome, IconMail,IconBrandLinkedin,IconBrandLeetcode } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconHome,
+  IconMail,
+  IconBrandLinkedin,
+  IconBrandLeetcode,
+} from "@tabler/icons-react";
 
 const links = [
   {
@@ -43,27 +50,31 @@ const links = [
     ),
     href: "https://github.com/Arman176001",
   },
-]
+];
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-7 lg:pt-10 xl:pt-20 ml-11">
-      <div className="fixed right-0 top-11 mb-6 flex justify-end items-start mr-11 z-20">
-      <FloatingDock items={links}/>
+    <div className="pb-20 pt-[6.5rem] max-w-[93%] lg:pt-10 xl:pt-20 ml-[-1.2rem] xs:ml-6 sm:ml-10 md:ml-11 h-screen">
+      <div className="fixed right-[-1.5rem] top-11 mb-6 flex justify-end items-start mr-11 z-20 lg:top-11 lg:right-11 lg:bottom-auto sm:bottom-0 sm:right-0 sm:mr-4 sm:mb-4 xs:bottom-0 xs:right-0 xs:mr-4 xs:mb-4">
+        <FloatingDock items={links} />
       </div>
       <div className="flex justify-start relative z-10 ml-11 mt-7">
-         <div className="max-w-[70%] flex flex-col items-start justify-center">
-           <TextGenerateEffect 
-           className="text-start text-2xl  sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl "
-           words="Crafting Intelligence"
-           />
-           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">
-           I&apos;m Arman Chaudhary, an AI/ML engineer based in India.
-           </p>
-           <a href="#projects">
-            <Magicbutton title="Show My Work" icon={<FaLocationArrow/>} position="right"/>
-           </a>
-         </div>
+        <div className="max-w-[100%] sm:max-w-[90%] md:max-w-[70%] flex flex-col items-start justify-center">
+          <TextGenerateEffect
+            className="text-start text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+            words="Crafting Intelligence"
+          />
+          <p className="text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl sm:mb-3 xs:mb-2">
+            I&apos;m Arman Chaudhary, an AI/ML engineer based in India.
+          </p>
+          <a href="#projects">
+            <Magicbutton
+              title="Show My Work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

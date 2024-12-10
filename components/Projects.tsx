@@ -14,11 +14,11 @@ import { motion } from "framer-motion";
 
 export function Projects() {
   return (
-    <div className="mt-[7.1%]" id="projects">
+    <div id="projects">
         <h1 className="heading font-sans">
             My Projects
         </h1>
-    <BentoGrid className="max-w-7xl mt-11  mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="lg:max-w-7xl max-w-[90%] mt-11 mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

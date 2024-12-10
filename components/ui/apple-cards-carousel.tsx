@@ -183,7 +183,7 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-64 w-56 md:h-[30rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative"
+      className="rounded-3xl bg-gray-100 dark:bg-neutral-900 lg:h-[30rem] h-[25rem] w-56 md:h-[30rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative"
     >
       <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
       <div className="relative z-40 p-8">

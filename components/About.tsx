@@ -8,8 +8,8 @@ export function About() {
   ));
 
   return (
-    <div className="mt-7 h-full py-10 px-11" id="about">
-      <h2 className="pl-11 pb-8 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+    <div className="mt-7 h-full py-10 lg:px-11" id="about">
+      <h2 className="heading lg:pb-8 lg:mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         About Me
       </h2>
       <Carousel items={cards} />
