@@ -17,7 +17,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: {icon: React.ReactNode; href: string }[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -33,7 +33,7 @@ const FloatingDockMobile = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: {icon: React.ReactNode; href: string }[];
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ const FloatingDockMobile = ({
           >
             {items.map((item, idx) => (
               <motion.div
-                key={item.title}
+                key={item.href}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{
                   opacity: 1,
@@ -64,7 +64,7 @@ const FloatingDockMobile = ({
               >
                 <Link
                   href={item.href}
-                  key={item.title}
+                  key={item.href}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
