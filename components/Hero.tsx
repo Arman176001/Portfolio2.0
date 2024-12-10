@@ -3,32 +3,28 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Magicbutton from "./ui/Magicbutton";
 import { FaLocationArrow } from "react-icons/fa";
 import { FloatingDock } from "./ui/floating-dock";
-import { IconBrandGithub, IconBrandX, IconExchange, IconHome, IconMail, IconTerminal2,IconBrandLinkedin,IconBrandLeetcode } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandX,IconHome, IconMail,IconBrandLinkedin,IconBrandLeetcode } from "@tabler/icons-react";
 
 const links = [
   {
-    title: "Home",
     icon: (
       <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "#",
   },
   {
-    title: "LinkedIn",
     icon: (
       <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "https://www.linkedin.com/in/arman-chaudhary-3100a328a/",
   },
   {
-    title: "LeetCode",
     icon: (
       <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "https://leetcode.com/u/Arman176/",
   },
   {
-    title: "Mail",
     icon: (
       <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
@@ -36,14 +32,12 @@ const links = [
   },
 
   {
-    title: "Twitter",
     icon: (
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "https://x.com/ArmanChaud30997",
   },
   {
-    title: "GitHub",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
