@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-export const FloatingDock = ({
+export const  FloatingDock = ({
   items,
   desktopClassName,
   mobileClassName,
